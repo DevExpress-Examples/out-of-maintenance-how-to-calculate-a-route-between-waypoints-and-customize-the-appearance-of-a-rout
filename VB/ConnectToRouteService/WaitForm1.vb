@@ -1,35 +1,32 @@
-﻿Imports System
-Imports System.Collections.Generic
+Imports System
 Imports System.ComponentModel
-Imports System.Data
 Imports System.Drawing
-Imports System.Text
-Imports System.Windows.Forms
 Imports DevExpress.XtraWaitForm
 
 Namespace ConnectToRouteService
-    Partial Public Class WaitForm1
+
+    Public Partial Class WaitForm1
         Inherits WaitForm
 
         Public Sub New()
             InitializeComponent()
-            Me.progressPanel1.AutoHeight = True
+            progressPanel1.AutoHeight = True
         End Sub
 
-        #Region "Overrides"
-
+#Region "Overrides"
         Public Overrides Sub SetCaption(ByVal caption As String)
             MyBase.SetCaption(caption)
-            Me.progressPanel1.Caption = caption
-        End Sub
-        Public Overrides Sub SetDescription(ByVal description As String)
-            MyBase.SetDescription(description)
-            Me.progressPanel1.Description = description
-        End Sub
-        Public Overrides Sub ProcessCommand(ByVal cmd As System.Enum, ByVal arg As Object)
-            MyBase.ProcessCommand(cmd, arg)
+            progressPanel1.Caption = caption
         End Sub
 
-        #End Region
+        Public Overrides Sub SetDescription(ByVal description As String)
+            MyBase.SetDescription(description)
+            progressPanel1.Description = description
+        End Sub
+
+        Public Overrides Sub ProcessCommand(ByVal cmd As [Enum], ByVal arg As Object)
+            MyBase.ProcessCommand(cmd, arg)
+        End Sub
+#End Region
     End Class
 End Namespace

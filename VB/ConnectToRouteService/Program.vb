@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to calculate a route between waypoints and customize the appearance of a route path using a Microsoft Bing Route web service
 ' 
 ' This example demonstrates how to calculate a route between several waypoints and
@@ -49,28 +49,21 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E5100
-
-
 Imports System
-Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Threading.Tasks
 Imports System.Windows.Forms
 
 Namespace ConnectToRouteService
-    Friend NotInheritable Class Program
 
-        Private Sub New()
-        End Sub
+    Friend Module Program
 
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
-        <STAThread> _
-        Shared Sub Main()
-            Application.EnableVisualStyles()
+        <STAThread>
+        Sub Main()
+            Call Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
-            Application.Run(New Form1())
+            Call Application.Run(New Form1())
         End Sub
-    End Class
+    End Module
 End Namespace

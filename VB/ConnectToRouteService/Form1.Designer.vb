@@ -1,5 +1,7 @@
-﻿Namespace ConnectToRouteService
-    Partial Public Class Form1
+Namespace ConnectToRouteService
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -30,7 +32,7 @@
             Me.informationLayer = New DevExpress.XtraMap.InformationLayer()
             Me.mapControl = New DevExpress.XtraMap.MapControl()
             Me.defaultLookAndFeel = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-            DirectCast(Me.mapControl, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.mapControl), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' splashScreenManager
@@ -69,19 +71,22 @@
             Me.Controls.Add(Me.mapControl)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.mapControl, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.mapControl), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+#End Region
         Private mapControl As DevExpress.XtraMap.MapControl
+
         Private imageLayer1 As DevExpress.XtraMap.ImageLayer
+
         Private imageProvider As DevExpress.XtraMap.BingMapDataProvider
+
         Private informationLayer As DevExpress.XtraMap.InformationLayer
+
         Private defaultLookAndFeel As DevExpress.LookAndFeel.DefaultLookAndFeel
+
         Private splashScreenManager As DevExpress.XtraSplashScreen.SplashScreenManager
     End Class
 End Namespace
-

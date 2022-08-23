@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to calculate a route between waypoints and customize the appearance of a route path using a Microsoft Bing Route web service
 ' 
 ' This example demonstrates how to calculate a route between several waypoints and
@@ -49,7 +49,6 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E5100
-
 ' Developer Express Code Central Example:
 ' How to calculate a route between waypoints and customize the appearance of a route path using a Bing Route web service
 ' 
@@ -92,31 +91,26 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E5100
-
 Imports System.Reflection
-Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
 
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("ConnectToRouteService")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyConfiguration("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ConnectToRouteService")>
-<Assembly: AssemblyCopyright("Copyright ©  2014")>
-<Assembly: AssemblyTrademark("")>
-<Assembly: AssemblyCulture("")>
-
+<Assembly:AssemblyTitle("ConnectToRouteService")>
+<Assembly:AssemblyDescription("")>
+<Assembly:AssemblyConfiguration("")>
+<Assembly:AssemblyCompany("")>
+<Assembly:AssemblyProduct("ConnectToRouteService")>
+<Assembly:AssemblyCopyright("Copyright ©  2014")>
+<Assembly:AssemblyTrademark("")>
+<Assembly:AssemblyCulture("")>
 ' Setting ComVisible to false makes the types in this assembly not visible 
 ' to COM components.  If you need to access a type in this assembly from 
 ' COM, set the ComVisible attribute to true on that type.
-<Assembly: ComVisible(False)>
-
+<Assembly:ComVisible(False)>
 ' The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("0ee01052-2f3b-4c4f-a9f6-27a48ec8fac9")>
-
+<Assembly:Guid("0ee01052-2f3b-4c4f-a9f6-27a48ec8fac9")>
 ' Version information for an assembly consists of the following four values:
 '
 '      Major Version
@@ -127,5 +121,5 @@ Imports System.Runtime.InteropServices
 ' You can specify all the values or you can default the Build and Revision Numbers 
 ' by using the '*' as shown below:
 ' [assembly: AssemblyVersion("1.0.*")]
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly:AssemblyVersion("1.0.0.0")>
+<Assembly:AssemblyFileVersion("1.0.0.0")>
